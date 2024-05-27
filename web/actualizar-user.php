@@ -4,7 +4,7 @@
 
     $id=$_GET['id'];
 
-    $sql="SELECT * FROM Energetica WHERE ID='$id'";
+    $sql="SELECT * FROM Usuarios WHERE ID='$id'";
     $query=mysqli_query($con, $sql);
 
     $row=mysqli_fetch_array($query);
@@ -30,12 +30,11 @@
         </header>
         <main class="centrar">
             <div class="users-form">
-                <form action="Functions/editar_energetica.php" method="POST">
+                <form action="Functions/editar_user.php" method="POST">
                     <input type="hidden" name="ID" value="<?= $row['ID']?>">
-                    <input type="text" name="Marca" placeholder="Marca" value="<?= $row['Marca']?>">
-                    <input type="text" name="Nombre" placeholder="Nombre" value="<?= $row['Nombre']?>">
-                    <input type="text" name="Sabor" placeholder="Sabor" value="<?= $row['Sabor']?>">
-                    <input type="text" name="Puntuacion" placeholder="Puntuacion" value="<?= $row['Puntuacion']?>">
+                    <input type="text" name="nombre" placeholder="nombre" value="<?= $row['nombre']?>">
+                    <input type="text" name="correo" placeholder="correo" value="<?= $row['correo']?>">
+                    <input type="text" name="contraseña" placeholder="contraseña" value="<?= $row['contraseña']?>">
                     <input type="submit" value="Actualizar">
                 </form>
             </div>

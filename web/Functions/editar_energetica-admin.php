@@ -13,7 +13,7 @@ $sql="UPDATE Energetica SET Marca='$marca', Nombre='$nombre', Sabor='$sabor', Pu
 $query = mysqli_query($con, $sql);
 
 if($query){
-    Header("Location: ../index-user.php");
+    Header("Location: ../registres.php");
 }else{
 
 }

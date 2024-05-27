@@ -1,10 +1,8 @@
 <?php
-
 function connection(){
     $host = "localhost";
     $user = "root";
     $pass = "alumne";
-
     $bd = "Energeticas";
 
     $connect=mysqli_connect($host, $user, $pass);
@@ -13,4 +11,3 @@ function connection(){
 
     return $connect;
 }
-?>

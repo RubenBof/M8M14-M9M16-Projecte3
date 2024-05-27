@@ -1,106 +1,255 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 html {
-    font-family: 'Segoe UI', sans-serif;
-}
-
-a{
-    text-decoration: none;
-    text-align: left;
-    padding: 8px;
-    border:2px solid #aaa;
-    border-radius:4px;
-    outline:none;
-    transition:.3s;
-
-
-}
-
-.users-form form{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 30%;
-    margin: 20px auto;
-    text-align: center;
-}
-
-.users-form form input{
-    font-family: 'Segoe UI', sans-serif;
-}
-
-.users-form form input[type=text],
-.users-form form input[type=password],
-.users-form form input[type=email]{
-    padding: 8px;
-    border:2px solid #aaa;
-    border-radius:4px;
-    outline:none;
-    transition:.3s;
-}
-
-.users-form form input[type=text]:focus,
-.users-form form input[type=password]:focus,
-.users-form form input[type=password]:focus{
-    border-color:dodgerBlue;
-    box-shadow:0 0 6px 0 dodgerBlue;
-}
-
-.users-form form input[type=submit]{
-    border: none;
-    padding: 12px 50px;
-    text-decoration: none;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: white; 
-    color: black; 
-    border: 2px solid #60a100;
-}
-.content {
     min-height: 100%;
     position: relative;
 }
-
-.btn {
-    position: absolute;
-    bottom: 20px; /* Ajusta el espacio desde el borde inferior */
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+*{
+    margin: 0px;
+    padding: 0px; 
+}
+header{
+    background-color: #00be39;
+    background-repeat: repeat;
+    background-size: 70px;
+    background-position: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    padding: 0px;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px#ffffff;   
+    margin-top: -80px;
+}
+main {
+    margin-top: 80px;
+}
+body{
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    margin-bottom: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #9e9e9e;
+    background-image: url(../MEDIA/fondo_bacano.png);
 }
 
-.btn:hover {
-    background-color: #0056b3;
+footer{
+    background-color: #0026ff;
+    position: fixed;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    
+
 }
-
-
-.users-form form input[type=submit]:hover {
-    background-color: #60a100;
+footer p{
     color: white;
+}
+h1 {
+    color: #000000;
+    font-size: 45px;
+    text-shadow: 3px 3px 3px#ffffff;
+    text-align:center;
+
+}
+h2 {
+    color: #000000;
+    font-size: 26px;
+    text-shadow: 2px 2px 2px#ffffff;
+}
+h3 {
+    color: rgb(123, 7, 177);
+}
+p{
+    color:#0026ff;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 2px 1px 3px #000000;
+}
+header div a:hover{
+    color:#00e1ff;
+    text-shadow: 0px 0px 8px #ffffff;
+    font-size: 15px;
+}
+header div a {
+    color: #D7D2CE ;
+    font-size: 15px;
+
+}
+summary{
+    color:#D7D2CE;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px#000000;
+}
+
+u a:link {
+    color: #003cff;
+    text-shadow: none;
+    background-color: #ffffff;
+    font-size: 5px;
+}
+u a:visited {
+    color: #00ffdd;
+  }
+u a:hover {
+    color: #ff0000;
+  }
+u a:active {
+    color: #e5ff00;
+}
+
+header details div {
+    color: #D7D2CE;
+    font-size: 30px;
+}
+  
+.desc {
+    padding: 15px;
+    text-align: center;
+    color: #000000;
+    text-shadow: none;
+}
+.gallery {
+    margin: 3px;
+    border: 3px solid rgb(103, 0, 163);
+    width: 31%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px;
+    float: left;
+    box-shadow: 2px 2px 5px rgb(103, 0, 163);
+  }
+.gallery:hover {
+    border: 3px solid rgb(0, 138, 143);
+    box-shadow: 2px 2px 5px rgb(0, 138, 143);
+}
+
+.galerias {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    align-content: center;
+}
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.manin {
+    margin: 3px;
+    border: 3px solid rgb(103, 0, 163);
+    width: 38%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px;
+    float: left;
+    box-shadow: 2px 2px 5px rgb(103, 0, 163);
+}
+.manin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img.weon  {
+    margin-top: 1%;
+    width: 300px;
+    height: 300px;
+}
+
+.centrar {
+    display: grid;
+    place-items: center;
+}
+table, td {
+    border: double 1px black;
+    text-align: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #222222;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    border: 3px solid #000000;
+    border-radius: 10px;
+
+}
+.tukson{
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    color: #000000;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    display: grid;
+    gap: 10px;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #222222;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-decoration: none;
+}
+.color {
+    padding: 1px;
+ 
+}
+
+input[type="submit"], input[type="checkbox"] {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .users-table table{
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-collapse: collapse;
     margin: 0;
     padding: 0;
     width: 100%;
     table-layout: fixed;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #222222;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
 }
 
 table tr {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
+    background-color: #00be39;
+    border: 1px solid #000000;
     padding: 4px;
+    width: 100%;
+    color: #000000;
+    text-shadow: 2px 2px 2px#ffffff;
+
 }
 
 table th{
@@ -115,6 +264,8 @@ table th{
     color: #fff;
     text-align: center;
     font-weight: bold;
+    text-shadow: 2px 2px 2px#000000;
+
 }
 .users-table--delete{
     background: #b11e1e;
@@ -122,4 +273,6 @@ table th{
     color: #fff;
     text-align: center;
     font-weight: bold;
+    text-shadow: 2px 2px 2px#000000;
+
 }

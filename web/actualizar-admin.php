@@ -22,7 +22,6 @@
         <link href="CSS/style.css" rel="stylesheet">
         <title>Editar Energeticas</title>
         <link rel="icon" href="MEDIA/jibagod.webp">
-
     </head>
     <body>
         <header class="centrar">
@@ -30,7 +29,7 @@
         </header>
         <main class="centrar">
             <div class="users-form">
-                <form action="Functions/editar_energetica.php" method="POST">
+                <form action="Functions/editar_energetica-admin.php" method="POST">
                     <input type="hidden" name="ID" value="<?= $row['ID']?>">
                     <input type="text" name="Marca" placeholder="Marca" value="<?= $row['Marca']?>">
                     <input type="text" name="Nombre" placeholder="Nombre" value="<?= $row['Nombre']?>">

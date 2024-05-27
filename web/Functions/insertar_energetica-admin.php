@@ -17,5 +17,5 @@ $sql = "INSERT INTO Energetica VALUES(null,'$Marca','$Nombre','$Sabor','$Puntuac
 $query = mysqli_query($con, $sql);
 
 if($query){
-    Header("Location: ../index-user.php");
+    Header("Location: ../registres.php");
 }else{}

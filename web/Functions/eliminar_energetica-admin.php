@@ -9,7 +9,7 @@ $sql="DELETE FROM Energetica WHERE ID='$id'";
 $query = mysqli_query($con, $sql);
 
 if($query){
-    Header("Location: ../index-user.php");
+    Header("Location: ../registres.php");
 }else{
 
 }
